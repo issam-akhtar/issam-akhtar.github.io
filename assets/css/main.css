@@ -1,0 +1,26 @@
+*{
+    font-family:monospace;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    background-color: burlywood;
+ }
+
+
+.title .name{
+    color: brown;
+}
+.title .proj{
+    color: crimson;
+    position: absolute;
+    top: 0px;
+    left: 450px;
+} 
+
+.title .resume{
+    color: crimson;
+    position: absolute;
+    top: 0px;
+    left: 700px; 
+}

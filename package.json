@@ -1,0 +1,24 @@
+{
+  "name": "issam-akhtar.github.io",
+  "version": "1.0.0",
+  "description": "Issam Akhtar Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/issam-akhtar/issam-akhtar.github.io.git"
+  },
+  "author": "Issam Akhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/issam-akhtar/issam-akhtar.github.io/issues"
+  },
+  "homepage": "https://github.com/issam-akhtar/issam-akhtar.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
