@@ -1,10 +1,11 @@
 *{
+    background-image: url("../images/1965982.webp");
     font-family:monospace;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    background-color: burlywood;
+    /* background-color: burlywood; */
  }
 
 
@@ -23,4 +24,8 @@
     position: absolute;
     top: 0px;
     left: 700px; 
+}
+
+.title .degree{
+    font-family:monospace;
 }
