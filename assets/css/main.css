@@ -1,17 +1,24 @@
 *{
-    background-image: url("../images/1965982.webp");
+    background-color: black;
+    
     font-family:monospace;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
     /* background-color: burlywood; */
+    font-size: 130%;
  }
-
+ a h1:hover{
+    color: aquamarine !important;
+    }
 
 .title .name{
     color: brown;
+    margin: 0%;
 }
+
+
 .title .proj{
     color: crimson;
     position: absolute;
@@ -19,13 +26,29 @@
     left: 450px;
 } 
 
+
 .title .resume{
     color: crimson;
     position: absolute;
     top: 0px;
-    left: 700px; 
+    left: 800px; 
 }
 
-.title .degree{
+
+.title #degree{
     font-family:monospace;
+    color: burlywood;
 }
+
+.projects {
+    color:brown;
+    font-size: 40%;
+}
+.projects:hover{
+    color: aquamarine;
+}
+
+.pic{
+    vertical-align: middle;
+}
+

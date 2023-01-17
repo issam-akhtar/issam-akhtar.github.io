@@ -8,13 +8,12 @@
 	<!-- #this is for mobile -->
 	<link rel="stylesheet" href="assets/css/main.css" /> 
 	<!-- this is for the css -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="margin: 0px; ">
 	<div class="title">
 		<a href="index.html">
 			<h1 class="name">Issam Akhtar</h1>
@@ -25,46 +24,50 @@
 		<a href="resume.html">
 			<h1 class="resume">Resume</h1>
 		</a>
-		<h2>Bachelor's in Software Engineering with a Minor in Mechatronics</h2>
+		<h2 id="degree">Bachelor's in Software Engineering with a Minor in Mechatronics</h2>
 	</div >
 
-    <div class="projects">
-        <ul>
-            <li>
-                <a href="ticket.html" id="ticket">
-                    <h1>Movie Theatre Ticket Reservation Application</h1>
-                </a>
-            </li>
-            <li>
-                <a href="multi.html" id="multi">
-                    <h1>
-                        Embedded Multimeter with Python Data Acquisition
-                    </h1>
-                </a>
-            </li>
-            <li>
-                <a href="mech.html" id="mech">
-                    <h1>
-                        Mechatronics Remote Control Car with Obstacle Avoidance
-                    </h1>
-                </a>
-            </li>
-            <li>
-                <a href="food.html" id="food">
-                    <h1>
-                        Food Bank Management System
-                    </h1>
-                </a>
-            </li>
-        </ul>
-    </div>
-	<div class="pic">
-		<a href="https://www.linkedin.com/in/issam-akhtar/"><img src="assets/images/linked.png" style="width: 75px;" id="link"></a> 
-		<a href="https://github.com/issam-akhtar"><img src="assets/images/git.png" style="width: 100px; " id="git"></a> 
-	</div>
-
+    <div >
+        <fieldset style="border-color: aquamarine; border-style: solid;">
+            <ul>
+                <li>
+                    <a href="ticket.html" id="ticket" class="projects">
+                        <label for="ticket">
+                            Movie Theatre Ticket Reservation Application
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="multi.html" id="multi" class="projects">
+                        <label for="multi">
+                            Embedded Multimeter with Python Data Acquisition
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="mech.html" id="mech" class="projects">
+                        <label for="mech">
+                            Mechatronics Remote Control Car with Obstacle Avoidance
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="food.html" id="food" class="projects">
+                        <label for="food">
+                            Food Bank Management System
+                        </label>
+                    </a>
+                </li>
+            </ul>
+        </fieldset>
+        </div>
+        <div class="pic">
+            <a href="https://www.linkedin.com/in/issam-akhtar/"><img src="assets/images/linked.png" style="width: 75px;" id="link"></a> 
+            <a href="https://github.com/issam-akhtar"><img src="assets/images/git.png" style="width: 100px; " id="git"></a> 
+        </div>
+        
 		
-	
-</body>
+        
+    </body>
 	
 </html>
