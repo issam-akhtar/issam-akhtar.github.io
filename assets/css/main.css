@@ -47,9 +47,24 @@
     color: aquamarine;
 }
 
-.pic{
+.icon .pic{
     vertical-align: middle;
 }
+.icon #linked{
+    position: absolute;
+    width: 75px;
+    top: 6px;
+    right: 100px;
+    
+}
+
+.icon #git{
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    right: 0px;
+}
+
 .link{
     color: lavender;
     text-decoration: underline;
