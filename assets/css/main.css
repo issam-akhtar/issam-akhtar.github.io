@@ -1,6 +1,5 @@
 *{
     background-color: black;
-    
     font-family:monospace;
     margin:0; padding:0;
     box-sizing: border-box;
@@ -51,4 +50,17 @@
 .pic{
     vertical-align: middle;
 }
-
+.link{
+    color: lavender;
+    text-decoration: underline;
+}
+.link:hover{
+    color:aquamarine;
+}
+.summary{
+    font-size:xx-large;
+    color: lavender;
+}
+.label{
+    color: lavender;
+}
