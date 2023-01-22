@@ -83,8 +83,8 @@
 }
 
  .accordion {
-    background-color: #eee;
-    color: #444;
+    /* background-color: #eee; */
+    color: lavender;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -97,7 +97,7 @@
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: darkseagreen;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -115,7 +115,7 @@
   .tab {
     float: left;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     width: 30%;
     height: auto;
   }
@@ -141,7 +141,7 @@
   
   /* Create an active/current "tab button" class */
   .tab button.active {
-    background-color: lavender;
+    background-color: darksalmon;
   }
   
   /* Style the tab content */
@@ -159,3 +159,4 @@
     font-size: 75%;
     color: brown;
   }
+
