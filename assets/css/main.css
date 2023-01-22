@@ -1,10 +1,11 @@
 *{
-    /* background-color: black; */
+    background-color: black;
     font-family:monospace;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
+    /* background-image: url(/assets/images/1965982.webp); */
     /* background-color: burlywood; */
     font-size: 130%;
     /* color: lavender ;  */
@@ -102,10 +103,10 @@
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: transparent;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 1s ease-out;
   } 
 
   * {box-sizing: border-box}
@@ -130,7 +131,7 @@
     outline: none;
     text-align: left;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1.5s;
   }
   
   /* Change background color of buttons on hover */
@@ -140,7 +141,7 @@
   
   /* Create an active/current "tab button" class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: lavender;
   }
   
   /* Style the tab content */
@@ -151,6 +152,7 @@
     width: 70%;
     border-left: none;
     height: auto;
+    color: green;
   }
 
   .info{
