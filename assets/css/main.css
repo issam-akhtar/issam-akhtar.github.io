@@ -16,13 +16,13 @@ a h1:hover{
   }
 
 .title .name{
-  color: brown;
+  color: rgb(232, 173, 153);
   margin: 0%;
 }
 
 
 .title .proj{
-  color: crimson;
+  color:rgb(232, 173, 153);
   position: absolute;
   top: 0px;
   left: 450px;
@@ -30,7 +30,7 @@ a h1:hover{
 
 
 .title .resume{
-  color: crimson;
+  color:rgb(232, 173, 153);
   position: absolute;
   top: 0px;
   left: 800px; 
@@ -155,10 +155,11 @@ a h1:hover{
   border-left: none;
   height: auto;
   color: darkseagreen;
+  font-size: 120%;
 }
 
 .info{
-  font-size: 75%;
+  font-size: 55%;
   color: burlywood;
 }
 
