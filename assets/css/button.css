@@ -4,16 +4,17 @@
   border-radius: 0.25rem 0.25rem 0 0;
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: 1.45rem;
   font-weight: 600;
-  height: 2.6rem;
+  height: 4.6rem;
   margin-bottom: -4rem;
   outline: 0;
   position: relative;
   top: 0;
   transform-origin: 0% 100%;
   transition: transform 50ms ease-in-out;
-  width: 9.5rem;
+  width: 15.5rem;
+
   -webkit-tap-highlight-color: transparent;
 }
 .tip-button:active {
@@ -53,16 +54,16 @@
   transform: scale(2) translateY(-10px);
 }
 .tip-button__text {
+  background: transparent;
   color: lavender;
-  margin-right: 1.8rem;
+  margin-right: 5rem;
   opacity: 1;
   position: relative;
   transition: opacity 100ms linear 500ms;
   z-index: 3;
-  /* font-size: 175%; */
 }
 .tip-button::before {
-  background: transparent;
+  background: darksalmon;
   border-radius: 0.25rem;
   bottom: 0;
   content: "";
@@ -108,6 +109,7 @@
 }
 
 .coin {
+  background-color: transparent;
   --front-y-multiplier: 0;
   --back-y-multiplier: 0;
   --coin-y-multiplier: 0;
@@ -116,14 +118,14 @@
   --coin-rotation-multiplier: 0;
   --shine-opacity-multiplier: 0.4;
   --shine-bg-multiplier: 50%;
-  bottom: calc(var(--coin-y-multiplier) * 1rem - 3.5rem);
-  height: 3.5rem;
-  margin-bottom: 3.05rem;
+  bottom: calc(var(--coin-y-multiplier) * 1rem - 8.5rem);
+  height: 8.5rem;
+  margin-bottom: 6.5rem;
   position: absolute;
-  right: calc(var(--coin-x-multiplier) * 34% + 16%);
+  right: calc(var(--coin-x-multiplier) * 34% + 14%);
   transform: translateX(50%) scale(calc(0.4 + var(--coin-scale-multiplier))) rotate(calc(var(--coin-rotation-multiplier) * -1deg));
   transition: opacity 100ms linear 200ms;
-  width: 3.5rem;
+  width: 8.5rem;
   z-index: 3;
 }
 .coin__front, .coin__middle, .coin__back, .coin::before, .coin__front::after, .coin__back::after {

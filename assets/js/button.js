@@ -80,8 +80,17 @@ tipButtons.forEach((button) => {
           resetCoin()
         }, 300)
       }, 1500)
-      window.open("https://www.linkedin.com/in/issam-akhtar/");
+      if (document.getElementById("linked").clicked) {
+        
+        window.open("https://www.linkedin.com/in/issam-akhtar/");
+      }
+      if (document.getElementById("git").clicked) {
+        
+        window.open("https://github.com/issam-akhtar");
+      }
+        
+      }
 
     }
   }
-})
+)
