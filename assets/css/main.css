@@ -1,162 +1,163 @@
+
 *{
-    background-color: darkslategray;
-    font-family:monospace;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    /* background-image: url(/assets/images/1965982.webp); */
-    /* background-color: burlywood; */
-    font-size: 130%;
-    /* color: lavender ;  */
- }
- a h1:hover{
-    color: aquamarine !important;
-    }
+  background-color: darkslategray;
+  font-family:monospace;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  /* background-image: url(/assets/images/1965982.webp); */
+  /* background-color: burlywood; */
+  font-size: 130%;
+  /* color: lavender ;  */
+}
+a h1:hover{
+  color: aquamarine !important;
+  }
 
 .title .name{
-    color: brown;
-    margin: 0%;
+  color: brown;
+  margin: 0%;
 }
 
 
 .title .proj{
-    color: crimson;
-    position: absolute;
-    top: 0px;
-    left: 450px;
+  color: crimson;
+  position: absolute;
+  top: 0px;
+  left: 450px;
 } 
 
 
 .title .resume{
-    color: crimson;
-    position: absolute;
-    top: 0px;
-    left: 800px; 
+  color: crimson;
+  position: absolute;
+  top: 0px;
+  left: 800px; 
 }
 
 
 .title #degree{
-    font-family:monospace;
-    color: burlywood;
+  font-family:monospace;
+  color: burlywood;
+  font-size: 95%;
 }
 
 .projects{
-    font-size: 40%;
-    color:lavender !important; 
+  font-size: 40%;
+  color:lavender !important; 
 }
 .projects :hover {
-    color:green !important; 
+  color:green !important; 
 }
 
 .icon .pic{
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .icon #linked{
-    position: absolute;
-    width: 75px;
-    top: 6px;
-    right: 100px;
-    
+  position: absolute;
+  width: 75px;
+  top: 6px;
+  right: 100px;
+  
 }
 
 .icon #git{
-    position: absolute;
-    width: 100px;
-    top: -5px;
-    right: 0px;
+  position: absolute;
+  width: 100px;
+  top: -5px;
+  right: 0px;
 }
 
 .link{
-    color: lavender;
-    text-decoration: underline;
+  color: lavender;
+  text-decoration: underline;
 }
 .link:hover{
-    color:aquamarine;
+  color:aquamarine;
 }
 .summary{
-    font-size:xx-large;
-    color: lavender;
+  font-size:xx-large;
+  color: lavender;
 }
 .label{
-    color: lavender;
+  color: lavender;
 }
 
- .accordion {
-    /* background-color: #eee; */
-    color: lavender;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    display: block;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: darkseagreen;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: transparent;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease-out;
-  } 
+.accordion {
+  /* background-color: #eee; */
+  color: lavender;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: block;
+}
 
-  * {box-sizing: border-box}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: darkseagreen;
+}
 
-  /* Style the tab */
-  .tab {
-    float: left;
-    border: 1px solid #ccc;
-    /* background-color: #f1f1f1; */
-    width: 30%;
-    height: auto;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 1.5s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color:lightseagreen;
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tab button.active {
-    background-color: burlywood;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: auto;
-    color: darkseagreen;
-  }
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+} 
 
-  .info{
-    font-size: 75%;
-    color: burlywood;
-  }
+* {box-sizing: border-box}
 
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  /* background-color: #f1f1f1; */
+  width: 30%;
+  height: auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:lightseagreen;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: burlywood;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: auto;
+  color: darkseagreen;
+}
+
+.info{
+  font-size: 75%;
+  color: burlywood;
+}

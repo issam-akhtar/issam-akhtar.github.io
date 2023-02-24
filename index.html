@@ -4,9 +4,11 @@
 <head>
 	<title>Issam Akhtar</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- #this is for mobile -->
 	<link rel="stylesheet" href="assets/css/main.css" /> 
+	<link rel="stylesheet" href="assets/css/button.css">
 	<!-- this is for the css -->
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
@@ -25,7 +27,7 @@
 			<h1 class="resume">Resume</h1>
 		</a>
 		
-		<h2 id="degree">Bachelor's in Software Engineering with a Minor in Mechatronics</h2>
+		<h2 id="degree"><em>Bachelor's in Software Engineering with a Minor in Mechatronics</em></h2>
 		<br> 
 		<h3 id="courselabel" style="color: lavender;">Course Work</h3>
 		<button class="accordion">First Year</button>
@@ -185,7 +187,7 @@
 					<p class="info">Concepts, methods, techniques, processes, and tools for software testing. The principles, processes, and applications of software reliability and software quality assurance.</p>
 				  </div>
 			</div>
-		<script src="course.js">
+		<script src="assets/js/course.js">
 		</script>
 
 
@@ -194,9 +196,19 @@
 	<div class="icon">
 		<a href="https://www.linkedin.com/in/issam-akhtar/"><img src="assets/images/linked.png" id="linked" class="pic"></a> 
 		<a href="https://github.com/issam-akhtar"><img src="assets/images/git.png" id="git" class="pic"></a> 
-		
-	</div>
 
+			<button class="tip-button">
+				<span class="tip-button__text">LinkedIn</span>
+				<div class="coin-wrapper">
+					<div class="coin">
+						<div class="coin__middle"></div>
+						<div class="coin__back"style="background-image: url( '/assets/images/linked.png' ) ; transform: translateY(calc(var(--front-y-multiplier) * 0.3181818182rem / 2)) scaleY(var(--front-scale-multiplier));"></div>
+						<div class="coin__front" style="background-image: url( '/assets/images/linked.png' ) ; transform: translateY(calc(var(--back-y-multiplier) * 0.3181818182rem / 2)) scaleY(var(--back-scale-multiplier));"></div>
+					</div>
+				</div>
+			</button>
+		  <script src="assets/js/button.js"></script>
+	</div>
 	
 </body>
 	
