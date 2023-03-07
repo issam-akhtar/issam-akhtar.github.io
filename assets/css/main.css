@@ -1,6 +1,8 @@
 
 *{
+  /* These are defaults */
   background-color: darkslategray;
+  /* background-image: linear-gradient(to right, red , yellow); */
   font-family:monospace;
   margin:0; padding:0;
   box-sizing: border-box;
@@ -11,6 +13,11 @@
   font-size: 130%;
   /* color: lavender ;  */
 }
+
+html{
+  /* This is default but doesnt overide elements css */
+}
+
 a h1:hover{
   color: aquamarine !important;
   }
@@ -19,7 +26,7 @@ a h1:hover{
   color: rgb(232, 173, 153);
   margin: 0%;
 }
-
+x1xq
 
 .title .proj{
   color:rgb(232, 173, 153);
