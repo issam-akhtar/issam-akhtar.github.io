@@ -170,3 +170,35 @@ a h1:hover{
   color: burlywood;
 }
 
+#mid{
+  position: relative;
+  width: 600px;
+  height: 200px;
+}
+#image{
+  height:175x;
+  width:175px;
+  background-color: transparent;
+}
+#image2{
+  position:absolute;
+  top:123px;
+  left : 320px;
+  height:175px;
+  width:175px;
+  background-color: transparent;
+}
+#gate {
+  background-image: url("http://5starsdesign.be/bg2.png");
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  left: 0px;
+  top: 400px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  background-size: 50px 50px;
+  color: white;
+}
