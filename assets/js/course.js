@@ -41,3 +41,11 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
   
+const buttons = document.querySelectorAll('.nav-button');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(otherBtn => otherBtn.classList.remove('active'));
+    btn.classList.add('active');
+  })
+});

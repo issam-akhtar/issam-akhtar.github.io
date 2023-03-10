@@ -13,192 +13,248 @@
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+	<div class="navbar">
+		<a href="#home" class="nav-button active" data-tooltip="Home"><i class="fas fa-home"></i><box-icon name="home" id="homeicon"></box-icon></a>
+		<a href="#about" class="nav-button" data-tooltip="About"><i class="fas fa-search"></i><box-icon name='user' id="abouticon"></box-icon></a>
+		<a href="#projects" class="nav-button" data-tooltip="Projects"><i class="fas fa-user"></i><box-icon name='terminal' id="projicon"></box-icon></a>
+		<a href="#resume" class="nav-button" data-tooltip="Resume"><i class="fas fa-envelope"></i><box-icon name='file-blank' id="resumeicon"></box-icon></a>
+		<a href="#contact" class="nav-button" data-tooltip="Contact"><i class="fas fa-envelope"></i><box-icon name='id-card' id="contacticon"></box-icon></a>
+	  </div>
+	  <script src="/assets/js/scroll.js"> </script>
+	  
+	<section id="home">
+
+	
 	<div class="title">
+
 		<a href="index.html">
 			<h1 class="name">Issam Akhtar</h1>
 		</a>
-		<a href="projects.html">
-			<h1 class="proj">Projects</h1>
-		</a>
-		<a href="resume.html">
-			<h1 class="resume">Resume</h1>
-		</a>
-
-
 		<h2 id="degree"><em>Bachelor's in Software Engineering with a Minor in Mechatronics</em></h2>
 		<br> 
-		<h3 id="courselabel" style="color: lavender;">Course Work</h3>
-		<button class="accordion">First Year (2020-2021)</button>
-			<div class="panel">
-				<div class="tab">
+	</div>
+	</section>
+	<section id="about">
+			<h3 id="courselabel" style="color: lavender;">Course Work</h3>
+			<button class="accordion">First Year (2020-2021)</button>
+				<div class="panel">
+					<div class="tab">
 
-					<button class="tablinks" onclick="openCity(event, '225')" style="color: lavender;">ENGG 225</button>
-					<button class="tablinks" onclick="openCity(event, '211')" style="color: lavender;">MATH 211</button>
-					<button class="tablinks" onclick="openCity(event, '275')" style="color: lavender;">MATH 275</button>
-					<button class="tablinks" onclick="openCity(event, '233')" style="color: lavender;">ENDG 233</button>
-					<button class="tablinks" onclick="openCity(event, '277')" style="color: lavender;">MATH 277</button>
-					<button class="tablinks" onclick="openCity(event, '259')" style="color: lavender;">PHYS 259</button>
-					<button class="tablinks" onclick="openCity(event, '200')" style="color: lavender;">ENGG 200</button>
-				  </div>
-				  <div id="225" class="tabcontent">
-					<h3>Fundamentals of Electrical Circuits and Machines</h3>
-					<p class="info">Current, voltage and power; Kirchhoff's current and voltage laws; capacitors; electricity and magnetism fundamentals applied to circuit elements and machines; inductors; topics in electrical circuits and systems; instrumentation; circuit design, DC and AC circuit analysis methods; DC and AC machines; first order circuits and transient analysis.</p>
-				  </div>
-				  <div id="211" class="tabcontent">
-					<h3>Linear Methods I</h3>
-					<p class="info">
-						An introduction to systems of linear equations, vectors in Euclidean space and matrix algebra. Additional topics include linear transformations, determinants, complex numbers, eigenvalues, and applications.
+						<button class="tablinks" onclick="openCity(event, '225')" style="color: lavender;">ENGG 225</button>
+						<button class="tablinks" onclick="openCity(event, '211')" style="color: lavender;">MATH 211</button>
+						<button class="tablinks" onclick="openCity(event, '275')" style="color: lavender;">MATH 275</button>
+						<button class="tablinks" onclick="openCity(event, '233')" style="color: lavender;">ENDG 233</button>
+						<button class="tablinks" onclick="openCity(event, '277')" style="color: lavender;">MATH 277</button>
+						<button class="tablinks" onclick="openCity(event, '259')" style="color: lavender;">PHYS 259</button>
+						<button class="tablinks" onclick="openCity(event, '200')" style="color: lavender;">ENGG 200</button>
+					</div>
+					<div id="225" class="tabcontent">
+						<h3>Fundamentals of Electrical Circuits and Machines</h3>
+						<p class="info">Current, voltage and power; Kirchhoff's current and voltage laws; capacitors; electricity and magnetism fundamentals applied to circuit elements and machines; inductors; topics in electrical circuits and systems; instrumentation; circuit design, DC and AC circuit analysis methods; DC and AC machines; first order circuits and transient analysis.</p>
+					</div>
+					<div id="211" class="tabcontent">
+						<h3>Linear Methods I</h3>
+						<p class="info">
+							An introduction to systems of linear equations, vectors in Euclidean space and matrix algebra. Additional topics include linear transformations, determinants, complex numbers, eigenvalues, and applications.
+							</p>
+					</div>
+					<div id="275" class="tabcontent">
+						<h3>Calculus for Engineers and Scientists</h3>
+						<p class="info">An extensive treatment of differential and integral calculus in a single variable, with an emphasis on applications. Differentiation: derivative laws, the mean value theorem, optimization, curve sketching and other applications. Integral calculus: the fundamental theorem of calculus, techniques of integration, improper integrals, and areas of planar regions. Infinite series: power series, Taylor's theorem and Taylor series.</p>
+					</div>
+					<div id="233" class="tabcontent">
+						<h3>Computing For Engineers</h3>
+						<p class="info">Overview of computer systems. Functions of software components: operating systems, editors, compilers. Programming in a high-level language: selection and loop structures, routines, array and record types, text file operations. Introduction to object-based programming: use of class libraries and construction of simple classes.</p>
+					</div>
+					<div id="277" class="tabcontent">
+						<h3>Multivariable Calculus for Engineers and Scientists</h3>
+						<p class="info">An introduction to calculus of several real variables: curves and parametrizations, partial differentiation, the chain rule, implicit functions; integration in two and three variables and applications; optimization and Lagrange multipliers.</p>
+					</div>
+					<div id="259" class="tabcontent">
+						<h3>Electricity and Magnetism (for students in Engineering)</h3>
+						<p class="info">Electric and magnetic fields related to charges and current through Maxwell's equations. Energy stored in fields, potential energy, and voltage. Conductors, insulators, and dielectrics. Resistance, capacitance, and inductance with applications to RC/RL circuits.</p>
+					</div>
+					<div id="200" class="tabcontent">
+						<h3>Engineering Design, Innovation and Entrepreneurship</h3>
+						<p class="info">Introduction to agile and iterative design; interdisciplinary application of engineering principles, digital technology, design, communications, leadership, entrepreneurship and project management concepts to a team-based design project with a focus on sustainability and social licenses</p>
+					</div>
+					
+				</div>
+			<button class="accordion">Second Year(2021-2022)</button>
+				<div class="panel">
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, '319')" style="color: lavender;">ENDG 319</button>
+						<button class="tablinks" onclick="openCity(event, '365')" style="color: lavender;">PHYS 365</button>
+						<button class="tablinks" onclick="openCity(event, '375')" style="color: lavender;">MATH 375</button>
+						<button class="tablinks" onclick="openCity(event, '337')" style="color: lavender;">ENSF 337</button>
+						<button class="tablinks" onclick="openCity(event, '353')" style="color: lavender;">ENEL 353</button>
+						<button class="tablinks" onclick="openCity(event, '327')" style="color: lavender;">ENEL 327</button>
+						<button class="tablinks" onclick="openCity(event, '409')" style="color: lavender;">ENSF 409</button>
+						<button class="tablinks" onclick="openCity(event, '369')" style="color: lavender;">ENCM 369</button>
+						<button class="tablinks" onclick="openCity(event, 'c319')" style="color: lavender;">CPSC 319</button>
+						<button class="tablinks" onclick="openCity(event, '349')" style="color: lavender;">ENGG 349</button>
+					</div>
+					<div id="319" class="tabcontent">
+						<h3>Probability And Statistics For Engineers</h3>
+						<p class="info">Presentation and description of data, introduction to probability theory, Bayes' theorem, discrete and continuous probability distributions, estimation, sampling distributions, tests of hypotheses on means, variances and proportions, simple linear regression and correlation. Applications are chosen from engineering practice.</p>
+					</div>
+					<div id="365" class="tabcontent">
+						<h3>Acoustics, Optics and Modern Physics (for students in Engineering)</h3>
+						<p class="info">
+							Wave motion as applied to acoustics, geometric and physical optics, and radiant energy transfer. Traditional and modern applications.
 						</p>
-				  </div>
-				  <div id="275" class="tabcontent">
-					<h3>Calculus for Engineers and Scientists</h3>
-					<p class="info">An extensive treatment of differential and integral calculus in a single variable, with an emphasis on applications. Differentiation: derivative laws, the mean value theorem, optimization, curve sketching and other applications. Integral calculus: the fundamental theorem of calculus, techniques of integration, improper integrals, and areas of planar regions. Infinite series: power series, Taylor's theorem and Taylor series.</p>
-				  </div>
-				  <div id="233" class="tabcontent">
-					<h3>Computing For Engineers</h3>
-					<p class="info">Overview of computer systems. Functions of software components: operating systems, editors, compilers. Programming in a high-level language: selection and loop structures, routines, array and record types, text file operations. Introduction to object-based programming: use of class libraries and construction of simple classes.</p>
-				  </div>
-				  <div id="277" class="tabcontent">
-					<h3>Multivariable Calculus for Engineers and Scientists</h3>
-					<p class="info">An introduction to calculus of several real variables: curves and parametrizations, partial differentiation, the chain rule, implicit functions; integration in two and three variables and applications; optimization and Lagrange multipliers.</p>
-				  </div>
-				  <div id="259" class="tabcontent">
-					<h3>Electricity and Magnetism (for students in Engineering)</h3>
-					<p class="info">Electric and magnetic fields related to charges and current through Maxwell's equations. Energy stored in fields, potential energy, and voltage. Conductors, insulators, and dielectrics. Resistance, capacitance, and inductance with applications to RC/RL circuits.</p>
-				  </div>
-				  <div id="200" class="tabcontent">
-					<h3>Engineering Design, Innovation and Entrepreneurship</h3>
-					<p class="info">Introduction to agile and iterative design; interdisciplinary application of engineering principles, digital technology, design, communications, leadership, entrepreneurship and project management concepts to a team-based design project with a focus on sustainability and social licenses</p>
-				  </div>
-				  
-			</div>
-		<button class="accordion">Second Year(2021-2022)</button>
-			<div class="panel">
-				<div class="tab">
-					<button class="tablinks" onclick="openCity(event, '319')" style="color: lavender;">ENDG 319</button>
-					<button class="tablinks" onclick="openCity(event, '365')" style="color: lavender;">PHYS 365</button>
-					<button class="tablinks" onclick="openCity(event, '375')" style="color: lavender;">MATH 375</button>
-					<button class="tablinks" onclick="openCity(event, '337')" style="color: lavender;">ENSF 337</button>
-					<button class="tablinks" onclick="openCity(event, '353')" style="color: lavender;">ENEL 353</button>
-					<button class="tablinks" onclick="openCity(event, '327')" style="color: lavender;">ENEL 327</button>
-					<button class="tablinks" onclick="openCity(event, '409')" style="color: lavender;">ENSF 409</button>
-					<button class="tablinks" onclick="openCity(event, '369')" style="color: lavender;">ENCM 369</button>
-					<button class="tablinks" onclick="openCity(event, 'c319')" style="color: lavender;">CPSC 319</button>
-					<button class="tablinks" onclick="openCity(event, '349')" style="color: lavender;">ENGG 349</button>
-				  </div>
-				  <div id="319" class="tabcontent">
-					<h3>Probability And Statistics For Engineers</h3>
-					<p class="info">Presentation and description of data, introduction to probability theory, Bayes' theorem, discrete and continuous probability distributions, estimation, sampling distributions, tests of hypotheses on means, variances and proportions, simple linear regression and correlation. Applications are chosen from engineering practice.</p>
-				  </div>
-				  <div id="365" class="tabcontent">
-					<h3>Acoustics, Optics and Modern Physics (for students in Engineering)</h3>
-					<p class="info">
-						Wave motion as applied to acoustics, geometric and physical optics, and radiant energy transfer. Traditional and modern applications.
-					</p>
-				  </div>
-				  <div id="375" class="tabcontent">
-					<h3>Differential Equations for Engineers and Scientists</h3>
-					<p class="info">Definition, existence and uniqueness of solutions; first order and higher order equations and applications; Homogeneous systems; Laplace transform; partial differential equations of mathematical physics.</p>
-				  </div>
-				  <div id="337" class="tabcontent">
-					<h3>Programming Fundamentals for Software and Computer</h3>
-					<p class="info">Key features of the C programming language. Pointers, memory models and memory management. Manipulation of text files and binary files. Introduction to recursion. Introduction to a modern object-oriented language. Development of basic program design skills with small projects.</p>
-				  </div>
-				  <div id="353" class="tabcontent">
-					<h3>Digital Circuits</h3>
-					<p class="info">Number systems and simple codes. Combinational logic: Boolean algebra, truth tables, minterms, maxterms, Karnaugh maps; gates, buffers, multiplexers and decoders; combinational circuit timing. Sequential circuits: latches and D flip flops; timing considerations; analysis and synthesis techniques; Mealy and Moore machine models; counters and registers. Introduction to memory arrays.</p>
-				  </div>
-				  <div id="327" class="tabcontent">
-					<h3>Signals and Transforms</h3>
-					<p class="info">Continuous-time systems. Impulse response and convolution. Fourier series and Fourier transform. Basics of discrete time signals. Sampling theory. Discrete convolution. Difference equations and the Z-transform. Discrete-time Fourier representations.</p>
-				  </div>
-				  <div id="409" class="tabcontent">
-					<h3>Principles of Software Development</h3>
-					<p class="info">A survey of software design and development topics for Engineering students. Topics include: key features of an object-oriented programming language, especially inheritance and polymorphism; elements of object-oriented design; programming and application of common data structures; strategies and tools for testing and debugging.</p>
-				  </div>
-				  <div id="369" class="tabcontent">
-					<h3>Computer Organization</h3>
-					<p class="info">Organization of a simple stored-program computer: CPU, busses and memory. Instruction sets, machine code, and assembly language. Conventions for assembly language generated by compilers. Floating-point number representation. Hardware organization. Address translation and virtual memory. Input/output devices, computer interfacing, interrupt handling and multi-tasking systems.</p>
-				  </div>
-				  <div id="c319" class="tabcontent">
-					<h3>Data Structures, Algorithms, and Their Applications</h3>
-					<p class="info">Fundamental data structures, including arrays, lists, stacks, queues, trees, hash tables, and graphs. Algorithms for searching and sorting. Introduction to analysis of algorithms. Applications of these data structures and algorithms.</p>
-				  </div>
-				  <div id="349" class="tabcontent">
-					<h3>Dynamics</h3>
-					<p class="info">Kinematics of particles and rigid bodies: rectilinear, curvilinear and general plane motion. Kinetics of particles and planar rigid bodies: Newton's 2nd Law, Principle of Work and Energy, Principle of Impulse and Momentum. Introduction to three dimensional rigid body dynamics.</p>
-				  </div>
-			</div>
-		<button class="accordion">Third Year (2022-2023) </button>
-			<div class="panel">
-				<div class="tab">
-					<button class="tablinks" onclick="openCity(event, '480')" style="color: lavender;">ENSF 480</button>
-					<button class="tablinks" onclick="openCity(event, '511')" style="color: lavender;">ENCM 511</button>
-					<button class="tablinks" onclick="openCity(event, '461')" style="color: lavender;">ENME 461</button>
-					<button class="tablinks" onclick="openCity(event, '441')" style="color: lavender;">ENEL 441</button>
-					<button class="tablinks" onclick="openCity(event, '471')" style="color: lavender;">SENG 471</button>
-					<button class="tablinks" onclick="openCity(event, '457')" style="color: lavender;">CPSC 457</button>
-					<button class="tablinks" onclick="openCity(event, '401')" style="color: lavender;">SENG 401</button>
-					<button class="tablinks" onclick="openCity(event, 's471')" style="color: lavender;">SENG 471</button>
-					<button class="tablinks" onclick="openCity(event, 'c441')" style="color: lavender;">CPSC 441</button>
-					<button class="tablinks" onclick="openCity(event, '438')" style="color: lavender;">SENG 438</button>
-				  </div>
-				  <div id="480" class="tabcontent">
-					<h3>Principles of Software Design</h3>
-					<p class="info">Brief overview of typical software development lifecycles. Systematic methods for designing large-scale, quality software. Concepts such as abstraction, modularity, and software modelling will be covered. Designing for non-functional properties of software will be introduced. Emphasis on individual skills.</p>
-				  </div>
-				  <div id="511" class="tabcontent">
-					<h3>Embedded System Interfacing</h3>
-					<p class="info">
-						Review of computer architecture; microcontrollers and their instruction sets; interfacing using common input/output devices, debugging and other software engineering practices, strategies for interrupt handling and exception handling; Interfacing using high level and assembly languages; software and hardware optimizations to achieve real time operations; real time operating systems; Embedded real-time applications.
-					</p>
-				  </div>
-				  <div id="461" class="tabcontent">
-					<h3>Foundations of Mechatronics</h3>
-					<p class="info">Modelling, analysis, and design of dynamic systems, including mechanical, electrical, electromechanical, fluidic, thermal, and mixed systems. Transient and forced response of linear time-invariant systems. Performance analysis and design to meet specifications in the time and frequency domains. Application of feedback control to dynamic systems.Laboratory: programming and interfacing a microcontroller with sensors and actuators.</p>
-				  </div>
-				  <div id="471" class="tabcontent">
-					<h3>Data Base Management Systems</h3>
-					<p class="info">Conceptual, internal and external data bases. Relational data base systems and SQL. The normal forms, data base design, and the entity-relationship approach.</p>
-				  </div>
-				  <div id="457" class="tabcontent">
-					<h3>Principles of Operating Systems</h3>
-					<p class="info">An introduction to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources.</p>
-				  </div>
-				  <div id="401" class="tabcontent">
-					<h3>Software Architecture</h3>
-					<p class="info">Software architectures and design for non-functional software properties. Introduction to program comprehension skills including analysis of existing architectures.</p>
-				  </div>
-				  <div id="s471" class="tabcontent">
-					<h3>Software Requirements Engineering</h3>
-					<p class="info">Introduction to elicitation, modelling, expression and validation of the requirements. Techniques and methodologies for requirements engineering. Applications of requirements engineering to the management of the software development lifecycle.</p>
-				  </div>
-				  <div id="c441" class="tabcontent">
-					<h3>Computer Networks</h3>
-					<p class="info">Principles and practice in modern telecommunications, computer communications and networks. Layered communication protocols and current physical, data link, network and Internet protocol layers. Circuit switching, packet switching, and an introduction to broadband multimedia networking.</p>
-				  </div>
-				  <div id="441" class="tabcontent">
-					<h3>Control Systems I</h3>
-					<p class="info">Component modelling and block diagram representation of feedback control systems. Mathematical modelling of dynamic systems; state-space representation and frequency domain representation of dynamic systems. Transient response analysis and steady-state error analysis. Root-locus analysis and design. Frequency response analysis with Bode and Nyquist stability criterion. Compensation design techniques. Introduction to multi sensor state feedback compensator design. Overview of digital control systems and industrial controllers.</p>
-				  </div>
-				  <div id="438" class="tabcontent">
-					<h3>Software Testing, Reliability, and Quality</h3>
-					<p class="info">Concepts, methods, techniques, processes, and tools for software testing. The principles, processes, and applications of software reliability and software quality assurance.</p>
-				  </div>
-			</div>
-		<script src="assets/js/course.js">
-			
-		</script>
+					</div>
+					<div id="375" class="tabcontent">
+						<h3>Differential Equations for Engineers and Scientists</h3>
+						<p class="info">Definition, existence and uniqueness of solutions; first order and higher order equations and applications; Homogeneous systems; Laplace transform; partial differential equations of mathematical physics.</p>
+					</div>
+					<div id="337" class="tabcontent">
+						<h3>Programming Fundamentals for Software and Computer</h3>
+						<p class="info">Key features of the C programming language. Pointers, memory models and memory management. Manipulation of text files and binary files. Introduction to recursion. Introduction to a modern object-oriented language. Development of basic program design skills with small projects.</p>
+					</div>
+					<div id="353" class="tabcontent">
+						<h3>Digital Circuits</h3>
+						<p class="info">Number systems and simple codes. Combinational logic: Boolean algebra, truth tables, minterms, maxterms, Karnaugh maps; gates, buffers, multiplexers and decoders; combinational circuit timing. Sequential circuits: latches and D flip flops; timing considerations; analysis and synthesis techniques; Mealy and Moore machine models; counters and registers. Introduction to memory arrays.</p>
+					</div>
+					<div id="327" class="tabcontent">
+						<h3>Signals and Transforms</h3>
+						<p class="info">Continuous-time systems. Impulse response and convolution. Fourier series and Fourier transform. Basics of discrete time signals. Sampling theory. Discrete convolution. Difference equations and the Z-transform. Discrete-time Fourier representations.</p>
+					</div>
+					<div id="409" class="tabcontent">
+						<h3>Principles of Software Development</h3>
+						<p class="info">A survey of software design and development topics for Engineering students. Topics include: key features of an object-oriented programming language, especially inheritance and polymorphism; elements of object-oriented design; programming and application of common data structures; strategies and tools for testing and debugging.</p>
+					</div>
+					<div id="369" class="tabcontent">
+						<h3>Computer Organization</h3>
+						<p class="info">Organization of a simple stored-program computer: CPU, busses and memory. Instruction sets, machine code, and assembly language. Conventions for assembly language generated by compilers. Floating-point number representation. Hardware organization. Address translation and virtual memory. Input/output devices, computer interfacing, interrupt handling and multi-tasking systems.</p>
+					</div>
+					<div id="c319" class="tabcontent">
+						<h3>Data Structures, Algorithms, and Their Applications</h3>
+						<p class="info">Fundamental data structures, including arrays, lists, stacks, queues, trees, hash tables, and graphs. Algorithms for searching and sorting. Introduction to analysis of algorithms. Applications of these data structures and algorithms.</p>
+					</div>
+					<div id="349" class="tabcontent">
+						<h3>Dynamics</h3>
+						<p class="info">Kinematics of particles and rigid bodies: rectilinear, curvilinear and general plane motion. Kinetics of particles and planar rigid bodies: Newton's 2nd Law, Principle of Work and Energy, Principle of Impulse and Momentum. Introduction to three dimensional rigid body dynamics.</p>
+					</div>
+				</div>
+			<button class="accordion">Third Year (2022-2023) </button>
+				<div class="panel">
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, '480')" style="color: lavender;">ENSF 480</button>
+						<button class="tablinks" onclick="openCity(event, '511')" style="color: lavender;">ENCM 511</button>
+						<button class="tablinks" onclick="openCity(event, '461')" style="color: lavender;">ENME 461</button>
+						<button class="tablinks" onclick="openCity(event, '441')" style="color: lavender;">ENEL 441</button>
+						<button class="tablinks" onclick="openCity(event, '471')" style="color: lavender;">SENG 471</button>
+						<button class="tablinks" onclick="openCity(event, '457')" style="color: lavender;">CPSC 457</button>
+						<button class="tablinks" onclick="openCity(event, '401')" style="color: lavender;">SENG 401</button>
+						<button class="tablinks" onclick="openCity(event, 's471')" style="color: lavender;">SENG 471</button>
+						<button class="tablinks" onclick="openCity(event, 'c441')" style="color: lavender;">CPSC 441</button>
+						<button class="tablinks" onclick="openCity(event, '438')" style="color: lavender;">SENG 438</button>
+					</div>
+					<div id="480" class="tabcontent">
+						<h3>Principles of Software Design</h3>
+						<p class="info">Brief overview of typical software development lifecycles. Systematic methods for designing large-scale, quality software. Concepts such as abstraction, modularity, and software modelling will be covered. Designing for non-functional properties of software will be introduced. Emphasis on individual skills.</p>
+					</div>
+					<div id="511" class="tabcontent">
+						<h3>Embedded System Interfacing</h3>
+						<p class="info">
+							Review of computer architecture; microcontrollers and their instruction sets; interfacing using common input/output devices, debugging and other software engineering practices, strategies for interrupt handling and exception handling; Interfacing using high level and assembly languages; software and hardware optimizations to achieve real time operations; real time operating systems; Embedded real-time applications.
+						</p>
+					</div>
+					<div id="461" class="tabcontent">
+						<h3>Foundations of Mechatronics</h3>
+						<p class="info">Modelling, analysis, and design of dynamic systems, including mechanical, electrical, electromechanical, fluidic, thermal, and mixed systems. Transient and forced response of linear time-invariant systems. Performance analysis and design to meet specifications in the time and frequency domains. Application of feedback control to dynamic systems.Laboratory: programming and interfacing a microcontroller with sensors and actuators.</p>
+					</div>
+					<div id="471" class="tabcontent">
+						<h3>Data Base Management Systems</h3>
+						<p class="info">Conceptual, internal and external data bases. Relational data base systems and SQL. The normal forms, data base design, and the entity-relationship approach.</p>
+					</div>
+					<div id="457" class="tabcontent">
+						<h3>Principles of Operating Systems</h3>
+						<p class="info">An introduction to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources.</p>
+					</div>
+					<div id="401" class="tabcontent">
+						<h3>Software Architecture</h3>
+						<p class="info">Software architectures and design for non-functional software properties. Introduction to program comprehension skills including analysis of existing architectures.</p>
+					</div>
+					<div id="s471" class="tabcontent">
+						<h3>Software Requirements Engineering</h3>
+						<p class="info">Introduction to elicitation, modelling, expression and validation of the requirements. Techniques and methodologies for requirements engineering. Applications of requirements engineering to the management of the software development lifecycle.</p>
+					</div>
+					<div id="c441" class="tabcontent">
+						<h3>Computer Networks</h3>
+						<p class="info">Principles and practice in modern telecommunications, computer communications and networks. Layered communication protocols and current physical, data link, network and Internet protocol layers. Circuit switching, packet switching, and an introduction to broadband multimedia networking.</p>
+					</div>
+					<div id="441" class="tabcontent">
+						<h3>Control Systems I</h3>
+						<p class="info">Component modelling and block diagram representation of feedback control systems. Mathematical modelling of dynamic systems; state-space representation and frequency domain representation of dynamic systems. Transient response analysis and steady-state error analysis. Root-locus analysis and design. Frequency response analysis with Bode and Nyquist stability criterion. Compensation design techniques. Introduction to multi sensor state feedback compensator design. Overview of digital control systems and industrial controllers.</p>
+					</div>
+					<div id="438" class="tabcontent">
+						<h3>Software Testing, Reliability, and Quality</h3>
+						<p class="info">Concepts, methods, techniques, processes, and tools for software testing. The principles, processes, and applications of software reliability and software quality assurance.</p>
+					</div>
+				</div>
+			<script src="assets/js/course.js">
+				
+			</script>
 
 
-	</div >
-
-	<!-- <div class="icon">
-		<a href="https://www.linkedin.com/in/issam-akhtar/"><img src="assets/images/linked.png" id="linked" class="pic"></a> 
-		<a href="https://github.com/issam-akhtar"><img src="assets/images/git.png" id="git" class="pic"></a>  -->
+		</div >
+	</section>
+	<section id="projects">
+		<div >
+			<fieldset style="border-color: aquamarine; border-style: solid;">
+				<ul>
+					<li>
+						<a href="multi.html" id="multi" class="projects">
+							<label for="multi">
+								Embedded Multimeter with Python Data Acquisition
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="ticket.html" id="ticket" class="projects">
+							<label for="ticket">
+								Movie Theatre Ticket Reservation Application
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="mech.html" id="mech" class="projects">
+							<label for="mech">
+								Mechatronics Remote Control Car with Obstacle Avoidance
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="food.html" id="food" class="projects">
+							<label for="food">
+								Food Bank Management System
+							</label>
+						</a>
+					</li>
+				</ul>
+			</fieldset>
+			</div>
+	</section>
+	<section id="resume">
+		<div class="resume">
+			<object
+		data="assets/files/Issam_Akhtar_Resume.pdf"
+		type="application/pdf"
+		width="100%"
+		height="1100px"
+		aria-labelledby="PDF document"
+	>
+	
+	</object>
+	</section>
+	<section id="contact">
 		<br><br><br><br>
 		<button class="tip-button" id="linked">
 			<span class="tip-button__text">LinkedIn</span>
@@ -221,7 +277,7 @@
 			</div>
 		</button>
 		<script src="assets/js/button.js"></script>
-				
+	</section>				
 			<!-- </div> -->
 
 	

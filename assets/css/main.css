@@ -16,6 +16,7 @@
 
 html{
   /* This is default but doesnt overide elements css */
+  margin-left: 100px;
 }
 
 a h1:hover{
@@ -27,6 +28,27 @@ a h1:hover{
   margin: 0%;
 }
 
+
+#home {
+  height: 100vh;
+}
+
+#about {
+  height: 120vh;
+
+}
+
+#projects {
+  height: 100vh;
+}
+
+#resume {
+  height: 150vh;
+}
+
+#contact {
+  height: 100vh;
+}
 
 .title .proj{
   color:rgb(232, 173, 153);
@@ -90,7 +112,12 @@ a h1:hover{
 .label{
   color: lavender;
 }
-
+#courselabel{
+  margin: 0 auto;
+  width: 50%;
+  font-size: 75%;
+}
+/* Course Accordon */
 .accordion {
   /* background-color: #eee; */
   color: lavender;
@@ -102,6 +129,11 @@ a h1:hover{
   outline: none;
   transition: 0.4s;
   display: block;
+  font-size: 100%;
+  /* align along middle */
+  margin: 0 auto;
+  width: 50%;
+
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -116,6 +148,8 @@ a h1:hover{
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-out;
+  margin: 0 auto;
+  width: 50%;
 } 
 
 * {box-sizing: border-box}
@@ -127,6 +161,7 @@ a h1:hover{
   /* background-color: #f1f1f1; */
   width: 30%;
   height: auto;
+  
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -141,6 +176,8 @@ a h1:hover{
   text-align: left;
   cursor: pointer;
   transition: 1.5s;
+  font-size: 70%;
+  
 }
 
 /* Change background color of buttons on hover */
@@ -162,14 +199,14 @@ a h1:hover{
   border-left: none;
   height: auto;
   color: darkseagreen;
-  font-size: 120%;
+  font-size: 75%;
 }
 
 .info{
   font-size: 55%;
   color: burlywood;
 }
-
+/* Under Construction */
 #mid{
   position: relative;
   width: 600px;
@@ -201,4 +238,130 @@ a h1:hover{
   text-transform: uppercase;
   background-size: 50px 50px;
   color: white;
+} 
+
+ .navbar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 300px;
+  border-radius: 30px;
+  transition: all 1s ease-in-out;
 }
+
+.nav-button {
+  background-color: white;
+  position: relative;
+  border: none;
+  color: #333333;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); */
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  /* box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3); */
+  width: 150px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: aqua;
+  
+
+  
+} 
+
+.nav-button.active {
+  background-color: lightsalmon;
+  color: white;
+}
+/* 
+.nav-button[data-tooltip="Home"]::before {
+  content: fsdfs ; /* set the path to the home icon 
+} */
+
+.nav-button:hover::before {
+  position: absolute;
+  top: -20px;
+  left: -50%;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.nav-button:hover::after{
+  content: attr(data-tooltip);;
+  position: absolute;
+}
+#homeicon {
+  background: transparent;
+  margin-top: -35px;
+  transform: scale(1.55);
+}
+/* make homeicon disappear after 0.5 seconds when hovered over */
+.nav-button:hover #homeicon {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#abouticon {
+  background: transparent;
+  margin-top: -35px;
+  transform: scale(1.55);
+}
+/* make abouticon disappear after 0.5 seconds when hovered over */
+.nav-button:hover #abouticon {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#projicon {
+  background: transparent;
+  margin-top: -35px;
+  transform: scale(1.55);
+}
+/* make projicon disappear after 0.5 seconds when hovered over */
+.nav-button:hover #projicon {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#resumeicon {
+  background: transparent;
+  margin-top: -35px;
+  transform: scale(1.55);
+}
+/* make resumeicon disappear after 0.5 seconds when hovered over */
+.nav-button:hover #resumeicon {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#contacticon {
+  background: transparent;
+  margin-top: -35px;
+  transform: scale(1.55);
+}
+/* make contacticon disappear after 0.5 seconds when hovered over */
+.nav-button:hover #contacticon {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+
+/* .navbar:hover {
+  width: 200px;
+  border-radius: 10px;
+} */
