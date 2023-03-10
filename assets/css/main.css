@@ -214,13 +214,16 @@ a h1:hover{
   height: 200px;
 }
 #image{
+  position:absolute;
   height:175x;
   width:175px;
+  top: -795px;
+  left : 175px;
   background-color: transparent;
 }
 #image2{
   position:absolute;
-  top:123px;
+  top: -720px;
   left : 320px;
   height:175px;
   width:175px;
@@ -239,6 +242,7 @@ a h1:hover{
   text-transform: uppercase;
   background-size: 50px 50px;
   color: white;
+  margin-left: 95px;
 } 
 
  .navbar {

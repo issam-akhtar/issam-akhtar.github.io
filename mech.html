@@ -4,31 +4,46 @@
 <head>
 	<title>Issam Akhtar</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- #this is for mobile -->
 	<link rel="stylesheet" href="assets/css/main.css" /> 
+	<link rel="stylesheet" href="assets/css/button.css">
 	<!-- this is for the css -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<div class="navbar">
+		<a href="#home" class="nav-button active" data-tooltip="Home"><i class="fas fa-home"></i><box-icon name="home" id="homeicon"></box-icon></a>
+		<a href="#about" class="nav-button" data-tooltip="About"><i class="fas fa-search"></i><box-icon name='user' id="abouticon"></box-icon></a>
+		<a href="#projects" class="nav-button" data-tooltip="Projects"><i class="fas fa-user"></i><box-icon name='terminal' id="projicon"></box-icon></a>
+		<a href="#resume" class="nav-button" data-tooltip="Resume"><i class="fas fa-envelope"></i><box-icon name='file-blank' id="resumeicon"></box-icon></a>
+		<a href="#contact" class="nav-button" data-tooltip="Contact"><i class="fas fa-envelope"></i><box-icon name='id-card' id="contacticon"></box-icon></a>
+	  </div>
+	  <script src="/assets/js/scroll.js"> </script>
+	  
+	<section id="home">
+
+	
 	<div class="title">
+
 		<a href="index.html">
 			<h1 class="name">Issam Akhtar</h1>
 		</a>
-		<a href="projects.html">
-			<h1 class="proj">Projects</h1>
-		</a>
-		<a href="resume.html">
-			<h1 class="resume">Resume</h1>
-		</a>
-
-		<h2 id="degree">Bachelor's in Software Engineering with a Minor in Mechatronics</h2>
-	</div >
+		<h2 id="degree"><em>Bachelor's in Software Engineering with a Minor in Mechatronics</em></h2>
+		<br> 
+	</div>
+	<div>
+		<!-- <h3>add icons of git and stuff?</h3> -->
+	</div>
+	</section>
 	<div>
 		<center>
 			<div id="mid">
