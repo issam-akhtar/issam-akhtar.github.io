@@ -3,7 +3,8 @@
   /* These are defaults */
   background-color: darkslategray;
   /* background-image: linear-gradient(to right, red , yellow); */
-  font-family:monospace;
+  /* font-family:; */
+  font-family:'Times New Roman', Times, serif;
   margin:0; padding:0;
   box-sizing: border-box;
   outline: none; border:none;
@@ -255,7 +256,8 @@ a h1:hover{
   background-color: white;
   position: relative;
   border: none;
-  color: #333333;
+  /* Color of all  unselected nav */
+  color: darksalmon; 
   font-size: 30px;
   width: 60px;
   height: 60px;
@@ -274,14 +276,15 @@ a h1:hover{
   width: 150px;
   height: 60px;
   border-radius: 20px;
-  background-color: aqua;
+  background-color: darkolivegreen;
   
 
   
 } 
 
 .nav-button.active {
-  background-color: lightsalmon;
+  background-color: darksalmon;
+  /* Color of active nav */
   color: white;
 }
 /* 
@@ -307,6 +310,8 @@ a h1:hover{
 .nav-button:hover::after{
   content: attr(data-tooltip);;
   position: absolute;
+  /* color of text */
+  /* color: green;  */
 }
 #homeicon {
   background: transparent;
