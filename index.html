@@ -29,31 +29,32 @@
 	  </div>
 
 
-	  <script src="/assets/js/scroll.js"> </script>
 	  
 	  <!-- make a dropdown menu for mobile -->
 	  <div class="dropdown">
 		  <button class="dropbtn"><box-icon name='menu' id="menuicon"></box-icon></button>
 		  <div class="dropdown-content">
-			  <a href="#home">Home</a>
-			  <a href="#about">About</a>
-			  <a href="#projects">Projects</a>
-			  <a href="#resume">Resume</a>
-			  <a href="#contact">Contact</a>
+			  <a href="#home"  class="dropsec">Home</a>
+			  <a href="#about" class="dropsec">About</a>
+			  <a href="#projects" class="dropsec">Projects</a>
+			  <a href="#resume" class="dropsec">Resume</a>
+			  <a href="#contact" class="dropsec">Contact</a>
 			</div>
 		</div>
+		<script src="/assets/js/scroll.js"> </script>
+		
+		<script>
+			$(document).ready(function() {
+				$(".dropbtn").click(function() {
+					$(".dropdown-content").toggle();
+				});
+			});
+		</script>
 
-<script>
-$(document).ready(function() {
-  $(".dropbtn").click(function() {
-    $(".dropdown-content").toggle();
-  });
-});
-</script>
+<!-- add button to bring back to #home -->
+<a href="#home" class="to-top" data-tooltip="Home" ><i class="top" ></i><box-icon name='up-arrow-alt' id="topicon"></box-icon></a>
 
-		<!-- add button to bring back to #home -->
-		<a href="#home" class="to-top" data-tooltip="Home"><i class="top"></i><box-icon name='up-arrow-alt' id="topicon"></box-icon></a>
-		<section id="home">
+<section id="home">
 
 	
 	<div class="title">
