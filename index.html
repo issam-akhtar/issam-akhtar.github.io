@@ -14,6 +14,8 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -25,9 +27,33 @@
 		<a href="#resume" class="nav-button" data-tooltip="Resume"><i class="fas fa-envelope"></i><box-icon name='file-blank' id="resumeicon"></box-icon></a>
 		<a href="#contact" class="nav-button" data-tooltip="Contact"><i class="fas fa-envelope"></i><box-icon name='id-card' id="contacticon"></box-icon></a>
 	  </div>
+
+
 	  <script src="/assets/js/scroll.js"> </script>
 	  
-	<section id="home">
+	  <!-- make a dropdown menu for mobile -->
+	  <div class="dropdown">
+		  <button class="dropbtn"><box-icon name='menu' id="menuicon"></box-icon></button>
+		  <div class="dropdown-content">
+			  <a href="#home">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#projects">Projects</a>
+			  <a href="#resume">Resume</a>
+			  <a href="#contact">Contact</a>
+			</div>
+		</div>
+
+<script>
+$(document).ready(function() {
+  $(".dropbtn").click(function() {
+    $(".dropdown-content").toggle();
+  });
+});
+</script>
+
+		<!-- add button to bring back to #home -->
+		<a href="#home" class="to-top" data-tooltip="Home"><i class="top"></i><box-icon name='up-arrow-alt' id="topicon"></box-icon></a>
+		<section id="home">
 
 	
 	<div class="title">
@@ -212,7 +238,7 @@
 	<section id="projects">
 		<div >
 			<fieldset style="border-color: aquamarine; border-style: solid;">
-				<ul>
+				<ul class="projectList">
 					<li>
 						<a href="multi.html" id="multi" class="projects">
 							<label for="multi">
