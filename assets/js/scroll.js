@@ -1,6 +1,7 @@
 		// Get all the nav links
 		const navLinks = document.querySelectorAll('.nav-button');
 		const dropSection = document.querySelectorAll('.dropsec');
+		
 		// Add a click event listener to each link
 		navLinks.forEach(link => {
 		  link.addEventListener('click', e => {
@@ -77,3 +78,30 @@
 		  });
 		});
 
+		const scrollToTop = document.querySelector('#scroll-to-top');
+		scrollToTop.addEventListener('click', function(e) {
+		  e.preventDefault();
+		  const duration = 1000;
+		  const start = window.pageYOffset;
+		  const end = 0;
+		  const distance = end - start;
+		  let startTime = null;
+		  function animateScroll(currentTime) {
+			if (startTime === null) {
+			  startTime = currentTime;
+			}
+			const elapsedTime = currentTime - startTime;
+			const position = Math.easeInOutQuad(elapsedTime, start, distance, duration);
+			window.scrollTo(0, position);
+			if (elapsedTime < duration) {
+			  window.requestAnimationFrame(animateScroll);
+			}
+		  }
+		  window.requestAnimationFrame(animateScroll);
+		});
+		Math.easeInOutQuad = function(t, b, c, d) {
+		  t /= d/2;
+			if (t < 1) return c/2*t*t + b;
+			t--;
+			return -c/2 * (t*(t-2) - 1) + b;
+		};
